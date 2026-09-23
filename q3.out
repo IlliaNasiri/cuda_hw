@@ -1,12 +1,12 @@
-block size: (1, 32, 1) , grid_size(1, 20000, 1)
-kernel elapsed time: 167603ms
+block size: (1, 32, 1) , grid_size(1, 625, 1)
+kernel elapsed time: 167560ms
 
 --------
-block size: (1, 16, 1) , grid_size(1, 20000, 1)
-kernel elapsed time: 194859ms
+block size: (1, 16, 1) , grid_size(1, 1250, 1)
+kernel elapsed time: 192162ms
 
 --------
-block size: (1, 8, 1) , grid_size(1, 20000, 1)
-kernel elapsed time: 288080ms
+block size: (1, 8, 1) , grid_size(1, 2500, 1)
+kernel elapsed time: 286028ms
 
 --------
