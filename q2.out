@@ -1,0 +1,12 @@
+block size: (32, 1, 1) , grid_size(625, 1, 1)
+kernel elapsed time: 580600ms
+
+--------
+block size: (16, 1, 1) , grid_size(1250, 1, 1)
+kernel elapsed time: 591798ms
+
+--------
+block size: (8, 1, 1) , grid_size(2500, 1, 1)
+kernel elapsed time: 596020ms
+
+--------
