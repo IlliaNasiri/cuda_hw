@@ -67,9 +67,9 @@ float block_size_experiments(
 }
 
 int main() {
-    unsigned int M = 10;
-    unsigned int K = 10;
-    unsigned int N = 10;
+    unsigned int M = 20000;
+    unsigned int K = 20000;
+    unsigned int N = 20000;
 
     dim3 block_sizes[] = {
         dim3(1, 32, 1),
