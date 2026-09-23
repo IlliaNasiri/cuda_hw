@@ -63,7 +63,7 @@ float block_size_experiments(
     cudaEventDestroy(stop);
 
     C.to_host();
-    print_matrix_hw2(C);
+    // print_matrix_hw2(C);
 
     return milliseconds;
 }
