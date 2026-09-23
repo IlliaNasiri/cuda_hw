@@ -62,7 +62,11 @@ float block_size_experiments(
 
     C.to_host();
 
-    // print_matrix_hw2(C);
+    std::cout << "C(0,0) = " << C.h_data[0] << '\n'
+              << "C(0,1) = " << C.h_data[1] << '\n'
+              << "C(1,0) = " << C.h_data[C.n_cols] << '\n'
+              << "C(1,1) = " << C.h_data[C.n_cols + 1] << '\n';
+
 
     return milliseconds;
 }

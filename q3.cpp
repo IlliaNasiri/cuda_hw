@@ -62,6 +62,11 @@ float block_size_experiments(
 
     C.to_host();
 
+    std::cout << "C(0,0) = " << C.h_data[0] << '\n'
+              << "C(0,1) = " << C.h_data[1] << '\n'
+              << "C(1,0) = " << C.h_data[C.n_cols] << '\n'
+              << "C(1,1) = " << C.h_data[C.n_cols + 1] << '\n';
+
     return milliseconds;
 
 }
@@ -80,7 +85,7 @@ int main() {
     for (auto block_size : block_sizes) {
         //
         float block_x = block_size.x, block_y = block_size.y;
-        dim3 grid_size( 1, ceil(M / block_x), 1 );
+        dim3 grid_size( 1, ceil(M / block_y), 1 );
 
         std::cout << "block size: " << dim3_to_string(block_size) << " , grid_size" << dim3_to_string(grid_size) << std::endl;
 
